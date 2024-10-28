@@ -1,0 +1,21 @@
+Error: #{message =>
+             <<"cannot retrieve dependencies information because dependencies were not loaded. Please invoke one of \"deps.loadpaths\", \"loadpaths\", or \"compile\" Mix task">>,
+         '__struct__' => 'Elixir.RuntimeError','__exception__' => true}
+[{'Elixir.Mix.Dep',load_and_cache,5,
+                   [{file,"lib/mix/dep.ex"},
+                    {line,128},
+                    {error_info,#{module => 'Elixir.Exception'}}]},
+ {'Elixir.Mix.Dep',load_and_cache,0,[{file,"lib/mix/dep.ex"},{line,114}]},
+ {'Elixir.Mix.Tasks.Deps.Loadpaths',run,1,
+                                    [{file,"lib/mix/tasks/deps.loadpaths.ex"},
+                                     {line,32}]},
+ {'Elixir.Mix.Task','-run_task/5-fun-3-',3,
+                    [{file,"lib/mix/task.ex"},{line,495}]},
+ {timer,tc,2,[{file,"timer.erl"},{line,590}]},
+ {'Elixir.Mix.Task',with_debug,4,[{file,"lib/mix/task.ex"},{line,519}]},
+ {'Elixir.Mix.Tasks.Loadpaths',run,1,
+                               [{file,"lib/mix/tasks/loadpaths.ex"},
+                                {line,37}]},
+ {'Elixir.Mix.Task','-run_task/5-fun-3-',3,
+                    [{file,"lib/mix/task.ex"},{line,495}]}]
+
